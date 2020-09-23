@@ -1,54 +1,54 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/../fonts/Gilroy-SemiBold.woff2') format('woff2'),
-        url('../fonts/Gilroy-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Cocomat Pro Trial';
+    src: url('../fonts/CocomatProTrial-BoldItalic.woff2') format('woff2'),
+        url('../fonts/CocomatProTrial-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
-        url('../fonts/Gilroy-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-        url('../fonts/Gilroy-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-        url('../fonts/Gilroy-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-family: 'Cocomat Pro Trial';
+    src: url('../fonts/CocomatProTrial-Bold.woff2') format('woff2'),
+        url('../fonts/CocomatProTrial-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Gilroy-ExtraBold.woff') format('woff');
-    font-weight: 800;
+    font-family: 'Cocomat Pro Trial';
+    src: url('../fonts/CocomatProTrial-BlackItalic.woff2') format('woff2'),
+        url('../fonts/CocomatProTrial-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocomat Pro Trial';
+    src: url('../fonts/CocomatProTrial-Regular.woff2') format('woff2'),
+        url('../fonts/CocomatProTrial-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocomat Pro Trial';
+    src: url('../fonts/CocomatProTrial-Black.woff2') format('woff2'),
+        url('../fonts/CocomatProTrial-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocomat Pro Trial';
+    src: url('../fonts/CocomatProTrial-Italic.woff2') format('woff2'),
+        url('../fonts/CocomatProTrial-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
 
@@ -59,6 +59,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 ol li,
 ul li {
@@ -79,164 +80,136 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
-  font-family: 'Gilroy', serif;
+  font-family: 'Cocomat Pro Trial', serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 img {
   vertical-align: top;
 }
 html,
 body {
-	font-size: 20px;
-	font-family: 'Indie Flower', cursive;
+	font-size: 17px;
+	font-family: 'Exo 2', sans-serif;
 	line-height: 30px;
-	color: #292929;
-	text-align: center;
+	color: #484848;
+	height: 100%;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 /* -------------- */
 
-.logo span{
-	color: #00ffde;
-	font-weight: 900;
-	text-transform: capitalize;
+.header {
 }
-.header__link {
-	color: #ff0067;
+.header__title {
+	font-size: 35px;
+	line-height: 45px;
+	letter-spacing: 4px;
+	color: #555;
+	text-align: center;
+
+	padding: 50px 0 20px;
+	margin: 0 0 20px 0;
+	
+}
+.header__date {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+.header img{
+	width: 100%;
+	margin: 0 0 50px 0;
+}
+.header p {
+	margin: 0 0 23px 0;
+}
+.header__list {
+	margin: 0 0 50px 0;
+	padding: 20px;
+}
+.header__link{
+	color: #6c00ff;
 }
 .header__link:hover{
 	text-decoration: underline;
-	text-shadow: 0 2px 6px #ff0067;
+	text-shadow: 0 0 5px #93ff00,
+	0 0 15px #93ff00, 0 0 25px #93ff00;
 }
-.first__title {
-	font-size: 46px;
-	font-weight: 900;
-	letter-spacing: 15px;
-	text-transform: uppercase;
-	line-height: 36px;
-	color: #0016bd;
+.main p {
+	margin: 0 0 23px 0;
 }
-.first__subtitle {
-	font-size: 18px;
-	font-weight: 600;
-	color: #8dbeff;
+.main a{
+	color: #6c00ff;
 }
-.intro {
-	color: #006eff;
-}
-.intro__link {
-	color: #ff9100;
-}
-.intro__link:hover{
-	text-decoration: line-through;
-	text-shadow: -1px 1px 2px #ff9100;
-}
-.new-balance-990v1__title {
-	font-size: 26px;
-	font-weight: 800;
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	line-height: 30px;
-	color: #0016bd;
-}
-.right{
-	text-align: right;
-	text-decoration: line-through;
-	line-height: 30px;
-	word-spacing: 20px;
-}
-.justify{
-	text-align: justify;
+.main a:hover{
 	text-decoration: underline;
-	text-indent: 25px;
+	text-shadow: 0 0 5px #93ff00,
+	0 0 15px #93ff00, 0 0 25px #93ff00;
 }
-.left{
-	text-align: left;
-	text-decoration: overline;
-	word-spacing: -2px;
+.main img{
+	width: 100%;
+	margin: 0 0 10px 0;
 }
-.new-balance-990v1__subtitle {
-	font-size: 18px;
-	font-weight: 600;
-	color: #8dbeff;
-}
-.new-balance-990v1 a{
-	color: #ff6b00;
-	text-shadow: 0 0 3px  #d64f37
-}
-.new-balance-990v1 a:hover{
-	text-shadow: 0 -3px 2px  #feff00, 
-	0 3px 5px  #feff00, 
-	0 0 10px  #feff00,
-	0 5px 15px  #feff00;
-}
-.new-balance-990v2__title {
-	font-size: 26px;
-	font-weight: 800;
+.title {
+	font-size: 24px;
+	font-style: italic;
 	letter-spacing: 1px;
-	text-transform: uppercase;
-	line-height: 30px;
-	color: #0016bd;
+
+	margin: 10px 0 30px 0;
 }
-.new-balance-990v2__subtitle {
+p.about {
+	font-size: 14px;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	color: #555;
+
+	margin: 0 0 37px 0;
+}
+.card {
+	max-width: 32%;
+	display: inline-block;
+	text-align: center;
+
+	margin: 0 10px 50px 0;
+	padding: 0;
+}
+.card p {
 	font-size: 18px;
 	font-weight: 600;
-	color: #8dbeff;
+	color: #000000;
+
+	margin: 10px 0 20px;
 }
-.new-balance-990v2__card span{
-	color: #00ff75;
-}
-.new-balance-990v2__card a{
-	color: #ff008a;
-}
-.new-balance-990v2__card a:hover{
-	text-shadow: 3px 3px 5px #ff008a;
-}
-.new-balance-990v3 p{
-	text-transform: uppercase;
-}
-.new-balance-990v3__title {
-	font-size: 26px;
-	font-weight: 800;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	line-height: 30px;
-	color: #0016bd;
-}
-.new-balance-990v3__subtitle {
+.card a{
+	display: inline-block;
+	width: 100%;
+	color: #fff;
 	font-size: 18px;
 	font-weight: 600;
-	color: #8dbeff;
-}
-.colab__title {
-	font-size: 26px;
-	font-weight: 800;
-	letter-spacing: 7px;
+	letter-spacing: 6px;
 	text-transform: uppercase;
-	line-height: 30px;
-	color: #0016bd;
+	background: #fc0150;
+
+	padding: 15px;
 }
-.colab a{
-	color: #24ff00;
+.card a:hover{
+	color: #e0e0e0;
+	background: #01fcad;
+	text-decoration: none;
+	text-shadow: none;
 }
-.colab a:hover{
-	color: #db00ff;
-	text-decoration: underline;
-	text-shadow: -2px -3px 4px #24ff00;
-}
-.colab__subtitle {
-	font-size: 18px;
-	font-weight: 600;
-	color: #8dbeff;
+.card:last-of-type{
+	margin: 0;
 }
 .footer {
-	text-transform: capitalize;
-	color: #ff0067;
-}
-.copyright a {
-	color: #24ff00;
-}
-.copyright a:hover{
-	color: #db00ff;
-	text-decoration: underline;
-	text-shadow: -2px -3px 4px #24ff00;
+	text-align: center;
+	padding: 30px;
 }
