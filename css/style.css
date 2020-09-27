@@ -1,54 +1,18 @@
 @font-face {
-    font-family: 'Cocomat Pro Trial';
-    src: url('../fonts/CocomatProTrial-BoldItalic.woff2') format('woff2'),
-        url('../fonts/CocomatProTrial-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cocomat Pro Trial';
-    src: url('../fonts/CocomatProTrial-Bold.woff2') format('woff2'),
-        url('../fonts/CocomatProTrial-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'P22UndergroundCYDemiBold';
+    src: url('../fonts/P22UndergroundCYDemiBold.woff2') format('woff2'),
+        url('../fonts/P22UndergroundCYDemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cocomat Pro Trial';
-    src: url('../fonts/CocomatProTrial-BlackItalic.woff2') format('woff2'),
-        url('../fonts/CocomatProTrial-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cocomat Pro Trial';
-    src: url('../fonts/CocomatProTrial-Regular.woff2') format('woff2'),
-        url('../fonts/CocomatProTrial-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cocomat Pro Trial';
-    src: url('../fonts/CocomatProTrial-Black.woff2') format('woff2'),
-        url('../fonts/CocomatProTrial-Black.woff') format('woff');
+    font-family: 'P22UndergroundCYProHeavy';
+    src: url('../fonts/P22UndergroundCYProHeavy.woff2') format('woff2'),
+        url('../fonts/P22UndergroundCYProHeavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cocomat Pro Trial';
-    src: url('../fonts/CocomatProTrial-Italic.woff2') format('woff2'),
-        url('../fonts/CocomatProTrial-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
     font-display: swap;
 }
 
@@ -80,17 +44,18 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
-  font-family: 'Cocomat Pro Trial', serif;
-  font-weight: 900;
+  font-family: 'P22UndergroundCYDemiBold', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
+  text-indent: 0px;
 }
 img {
   vertical-align: top;
 }
 html,
 body {
-	font-size: 17px;
-	font-family: 'Exo 2', sans-serif;
+	font-size: 18px;
+	font-family: 'EB Garamond', serif;
 	line-height: 30px;
 	color: #484848;
 	height: 100%;
@@ -101,115 +66,364 @@ body {
 	max-width: 900px;
 	margin: 0 auto;
 }
+.border{
+	max-width: 100%;
+	min-height: 30px;
+	background: linear-gradient(-90deg, #eee27f, #3d3b30, #4d5061, #5c80bc, #dc9596);
+	border-top: 2px solid  #dc9596;
+	border-bottom: 2px solid  #5c80bc;
+}
+.border_reverse{
+	max-width: 100%;
+	min-height: 30px;
+	background: linear-gradient(90deg, #eee27f, #3d3b30, #4d5061, #5c80bc, #dc9596);
+	border-top: 2px solid  #5c80bc;
+	border-bottom: 2px solid  #dc9596;
+}
 
 /* -------------- */
-
-.header {
-}
-.header__title {
-	font-size: 35px;
-	line-height: 45px;
-	letter-spacing: 4px;
-	color: #555;
+.circle{
+	font-family: 'P22UndergroundCYProHeavy', sans-serif;
+	font-size: 80px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	line-height: 80px;
+	text-transform: uppercase;
 	text-align: center;
+		
+	color: #eee27f;
+	text-shadow: 0 11px 0 #5e5576;
+	
+	margin: 25px auto;
+	min-height: 900px;
+	max-width: 900px;
+	background: #38a8a7;
+	
+	border: 150px solid #5e5576;
+	border-bottom: 20px solid #EECFBA, #C5DDE8;
+	border-radius: 50%;
+	box-shadow: 0 0 0 950px #eee27f;
+}
+.circle p {
+	padding: 180px 0;
+}
 
-	padding: 50px 0 20px;
-	margin: 0 0 20px 0;
+.cosmos{
+	background: #01001d;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 160px 0 250px;
+}
+.cosmos__tittle{
+	font-size: 46px;
+	font-weight: 900;
+	letter-spacing: 30px;
+	text-align: center;
+	color: #fff;
+
+	margin: 0 0 260px 0;
+	/* display: none; */
+}
+.cosmos__box{
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	/* display: flex;
+	justify-content: space-between;
+	align-items: center; */
+}
+a.cosmos__box{
+	display: block;
+	width: 100%;
+	height: 100%;
 	
 }
-.header__date {
-	font-size: 20px;
+.planet a:hover{
+	cursor: pointer;
+}
+.planet{
+	display: inline-block;
+	border-radius: 50%;
+}
+.cosmos__sun{
+	min-height: 170px;
+	min-width: 170px;
+	margin: 0 108px 0 0;
+
+	border: 1px solid #c04600;
+	background: #f65900;
+	box-shadow: 5px 5px 5px -5px #c04600, 
+	5px 5px 25px 20px #6d130b, 
+	5px 5px 49px 46px #fff0a1, 
+	inset -2px 13px 19px 18px #e54002, 
+	inset -53px 53px 48px 27px #FFF08D, 
+	inset 34px 57px 51px 90px #b82301, 
+	inset 96px -1px 32px 28px #b82301,
+	inset -53px 53px 48px 27px #FFF08D;
+}
+.cosmos__sun:hover{
+	box-shadow: 5px 5px 5px -5px #c04600, 
+	5px 5px 100px 80px #6d130b, 
+	5px 5px 120px 150px #fff0a1, 
+	inset -2px 13px 19px 18px #e54002, 
+	inset -53px 53px 48px 27px #FFF08D, 
+	inset 34px 57px 51px 90px #b82301, 
+	inset 96px -1px 32px 28px #b82301,
+	inset -53px 53px 48px 27px #FFF08D;
+	curso
+}
+.cosmos__mercury{
+	min-height: 21px;
+	min-width: 21px;
+	margin: 0 40px 62px 0;
+
+	background: #74664d;
+	box-shadow: 0 0 5px 5px #74664d, 
+	inset 1px 1px 6px 5px #baa693, 
+	inset 5px 5px 11px 1px #73664b;
+}
+.cosmos__mercury:hover{
+	box-shadow: 0 0 25px 25px #74664d, 
+	inset 1px 1px 6px 5px #baa693, 
+	inset 5px 5px 11px 1px #73664b;
+}
+.cosmos__venus{
+	min-height: 34px;
+	min-width: 34px;
+	margin: 0 40px 55px 0;
+
+	background: #b5731b;
+	box-shadow: 0px 0 4px 3px #b5731b, 
+	0 0 4px 6px #541d00, 
+	inset 3px 4px 12px 10px #541d00, 
+	inset 0 0 44px -10px #f8cf71;
+}
+.cosmos__venus:hover{
+	box-shadow: 0px 0 44px 43px #b5731b, 
+	0 0 4px 6px #541d00, 
+	inset 3px 4px 12px 10px #541d00, 
+	inset 0 0 44px -10px #f8cf71;
+}
+.cosmos__earth{
+	min-height: 45px;
+	min-width: 45px;
+	margin: 0 50px 48px 0;
+
+	background: #10205f;
+	box-shadow: 0 0 11px 11px #10205f, 
+	inset -4px 4px 8px 2px #5b794f,
+	inset -5px -4px 7px -5px #d9dfe9, 
+	inset 8px -3px 11px 0px #8e804b;
+}
+.cosmos__earth:hover{
+	box-shadow: 0 0 61px 61px #10205f, 
+	inset -4px 4px 8px 2px #5b794f,
+	inset -5px -4px 7px -5px #d9dfe9, 
+	inset 8px -3px 11px 0px #8e804b;
+}
+.cosmos__mars{
+	min-height: 30px;
+	min-width: 30px;
+	margin: 0 50px 55px 0;
+
+	background: #d19260;
+	box-shadow: 0 0 9px 4px #d19260, 
+	inset 3px 1px 8px 7px #4a3e35;
+}
+.cosmos__mars:hover{
+	box-shadow: 0 0 59px 54px #d19260, 
+	inset 3px 1px 8px 7px #4a3e35;
+}
+.cosmos__jupiter{
+	min-height: 94px;
+	min-width: 94px;
+	margin: 0 50px 21px 0;
+
+	background: #886d5f;
+	box-shadow: 0 0 14px 8px #886d5f, 
+	inset 5px 6px 20px 6px #fdf0c8, 
+	inset 10px 9px 18px 9px #da9b73, 
+	inset 5px 1px 19px 1px #886d5f;
+}
+.cosmos__jupiter:hover{
+	box-shadow: 0 0 54px 58px #886d5f, 
+	inset 5px 6px 20px 6px #fdf0c8, 
+	inset 10px 9px 18px 9px #da9b73, 
+	inset 5px 1px 19px 1px #886d5f;
+}
+.cosmos__saturn {
+	min-height: 77px;
+	min-width: 77px;
+	margin: 0 30px 28px 0;
+
+	border: 1px solid #9e9871;
+	background: #9e9871;
+	box-shadow: 0 0 10px 5px #9e9871, 
+	inset 6px 3px 12px 2px #a49268, 
+	inset 7px 10px 19px 19px #7c7a66;
+}
+.cosmos__saturn:hover{
+	box-shadow: 0 0 40px 45px #9e9871, 
+	inset 6px 3px 12px 2px #a49268, 
+	inset 7px 10px 19px 19px #7c7a66;
+}
+.cosmos__uranus{
+	min-height: 61px;
+	min-width: 61px;
+	margin: 0 30px 33px 0;
+
+	border: 1px solid #8cafb8;
+	background: #d4fafb;
+	box-shadow: 0 0 10px 3px #d4fafb, 
+	inset 6px 6px 15px 7px #8cafb8, 
+	inset 7px 8px 11px 3px #afdcde;
+}
+.cosmos__uranus:hover{
+	box-shadow: 0 0 40px 43px #d4fafb, 
+	inset 6px 6px 15px 7px #8cafb8, 
+	inset 7px 8px 11px 3px #afdcde;
+}
+.cosmos__neptune{
+	min-height: 57px;
+	min-width: 57px;
+	margin: 0 0 34px 0;
+
+	border: 1px solid #3548b8;
+	background: #3548b8;
+	box-shadow: 0 0 11px 7px #3548b8, 
+	inset -3px -2px 12px 8px #4674fe, 
+	inset 10px 9px 17px 6px #20265b;
+}
+.cosmos__neptune:hover{
+	box-shadow: 0 0 61px 57px #3548b8, 
+	inset -3px -2px 12px 8px #4674fe, 
+	inset 10px 9px 17px 6px #20265b;
+}
+.content p{
+	margin: 0 0 15px 0;
+}
+.intro{
+	padding: 40px 10px;
+}
+.intro span{
 	font-weight: bold;
-	text-align: center;
-	margin: 0 0 40px 0;
+	text-shadow: 0 0 6px #dc9596;
 }
-.header img{
-	width: 100%;
-	margin: 0 0 50px 0;
+.content__list{
+	text-indent: 45px;
 }
-.header p {
-	margin: 0 0 23px 0;
+.content__list li{
+	padding: 0 0 5px 0;
 }
-.header__list {
-	margin: 0 0 50px 0;
-	padding: 20px;
+.content__link{
+	color: #5c80bc;
 }
-.header__link{
-	color: #6c00ff;
-}
-.header__link:hover{
+.content__link:hover{
+	color: #dc9596;
 	text-decoration: underline;
-	text-shadow: 0 0 5px #93ff00,
-	0 0 15px #93ff00, 0 0 25px #93ff00;
 }
-.main p {
-	margin: 0 0 23px 0;
+.title__box{
+	margin: 0 0 90px 0;
 }
-.main a{
-	color: #6c00ff;
+.black{
+	background: #3d3b30;
+	color: #fff;
+	padding: 80px 10px;
 }
-.main a:hover{
-	text-decoration: underline;
-	text-shadow: 0 0 5px #93ff00,
-	0 0 15px #93ff00, 0 0 25px #93ff00;
+.black p{
+	margin: 0 0 20px 0;
 }
-.main img{
-	width: 100%;
+.white{
+	background: #eee27f;
+	color: #4d5061;
+	padding: 80px 10px;
+}
+.white img,
+.black img{
 	margin: 0 0 10px 0;
 }
-.title {
-	font-size: 24px;
-	font-style: italic;
+.white,
+.black{
+	text-indent: 55px;
+}
+.title{
+	font-size: 37px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	margin: 35px 0 30px 0;
+}
+.subtitle{
+	font-size: 32px;
 	letter-spacing: 1px;
-
-	margin: 10px 0 30px 0;
+	margin: 0 0 40px 0;
 }
-p.about {
-	font-size: 14px;
-	font-style: italic;
+.about{
+	font-size: 12px;
+	text-align: center;
 	text-transform: uppercase;
-	text-align: center;
-	color: #555;
-
-	margin: 0 0 37px 0;
 }
-.card {
-	max-width: 32%;
+.first-letter{
+	color: #DC143C;
+	font-size: 21px;
+	letter-spacing: 2px;
+	text-shadow: 0 0 5px #DC143C, 0 0 10px #DC143C, 0 0 20px #DC143C, 0 0 40px #DC143C;
+}
+.action{
+	text-align: center;
+	padding: 20px 0;
+}
+.action__link{
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
 	display: inline-block;
-	text-align: center;
-
-	margin: 0 10px 50px 0;
-	padding: 0;
+	padding: 20px 20px;
+	text-indent: 0px;
+	margin: 0 30px 0 0;
+	cursor: pointer;
 }
-.card p {
-	font-size: 18px;
-	font-weight: 600;
-	color: #000000;
-
-	margin: 10px 0 20px;
-}
-.card a{
+.action__link img{
 	display: inline-block;
-	width: 100%;
-	color: #fff;
-	font-size: 18px;
-	font-weight: 600;
-	letter-spacing: 6px;
-	text-transform: uppercase;
-	background: #fc0150;
-
-	padding: 15px;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
 }
-.card a:hover{
-	color: #e0e0e0;
-	background: #01fcad;
-	text-decoration: none;
-	text-shadow: none;
+.green{
+	background: #00FF00;
+	box-shadow: -1px -1px 3px 3px #84ff84,
+	2px 2px 4px 4px #005200;
 }
-.card:last-of-type{
-	margin: 0;
+.green:hover{
+	box-shadow: -1px -1px 3px 3px #84ff84,
+	2px 2px 4px 4px #005200,
+	inset -2px -2px 5px 5px #84ff84,
+	inset 2px 2px 6px 6px #005200;
 }
-.footer {
+.pink{
+	background: #ff00ff;
+	box-shadow: -1px -1px 3px 3px #ff84ff,
+	2px 2px 4px 4px #520052;
+}
+.pink:hover{
+	box-shadow: -1px -1px 3px 3px #ff84ff,
+	2px 2px 4px 4px #520052,
+	inset -2px -2px 5px 5px #ff84ff,
+	inset 2px 2px 6px 6px#520052;
+}
+.video {
+	background: #000;
+}
+.footer{
+	background: #5c80bc;
 	text-align: center;
-	padding: 30px;
+	color: #dc9596;
+	padding: 40px 0;
+}
+.footer a{
+	color: #3d3b30;
+}
+.footer a:hover{
+	color: #eee27f;
+	text-shadow: 0 2px 6px #eee27f,
+	0 0 10px #eee27f, 0 0 20px #DC143C, 0 0 40px #eee27f;
 }
