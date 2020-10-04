@@ -124,6 +124,7 @@ body {
 	background: linear-gradient(360deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 51.04%), #70C851;
 	border-radius: 3px;
 	cursor: pointer;
+	outline: none;
 
 	padding: 0 30px;
 	line-height: 44px;
@@ -161,10 +162,14 @@ body {
 	color: #fff;
 	padding: 0 43px;
 	line-height: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 	background: #70C851;
 	border-radius: 3px;
 	box-shadow: 0px 1px 20px rgba(121, 193, 95, 0.45);
 	cursor: pointer;
+	outline: none;
+
 	margin: 0 0 161px 0;
 }
 .header__start:hover{
