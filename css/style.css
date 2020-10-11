@@ -459,13 +459,18 @@ textarea {
 	border-radius: 5px;
 	margin: 0 10px 0 0;
 	vertical-align: text-bottom;
-	background-color: #fff; 
+	background-color: #fff;
 }
 
 
 .login__btn:checked + .login__label::before{
-	background: #fff url(../img/check2.png) center / 90% no-repeat;
+	background: #fff url(../img/check2.png) center / 80% no-repeat;
 }
+
+/* .checkbox__btn:checked + .checkbox__label::before{
+	background: #fff url(../img/check.png) center / 90% no-repeat;
+} */
+
 
 .submit {
 }
