@@ -4,68 +4,125 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Lesson_#9</title>
+	<title>Lesson_#10</title>
 </head>
 <body>
-		<header class="header">
-				<div class=wrapper>
-					<div class="header-top">
-						<div class="logo__box">
-							<div class="logo">OFDR</div>
-							<div class="logo__text">центр профессиональной<br>дистанционной<br> переподготовки кадров</div>
-						</div>
-						<div class="social">
-							<div class="whatsapp"></div>
-							<div class="viber"></div>
-							<div class="telegram"></div>
-						</div>
-						<div class="contact">
-							<a href="tel:88000000000" class="tel">8 800 000-00-00</a>
-							<a href="mailto:email@email.com" class="mail">email@email.com</a>
-						</div>
-						<button class="header__call">Заказать звонок</button>
-						<div class="header__menu">
-							<ul class="header__nav">
-								<li><a href="#" class="header__link">Курсы</a></li>
-								<li><a href="#" class="header__link">Аттестация</a></li>
-								<li><a href="#" class="header__link">Охрана труда</a></li>
-								<li><a href="#" class="header__link">Пожарная безопасность</a></li>
-								<li><a href="#" class="header__link">Свидетельство дорог</a></li>
-								<li><a href="#" class="header__link">Права на спецтехнику</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="wrapper">
-						<div class="header__content">
-							<div class="header__text">
-								<h1 class="header__title">Оформление допусков, удостоверений всех строительных и рабочих специальностей</h1>
-								<p>аттестация ИТР <span>от 2 500 руб</span></p>
-								<button class="header__btn">Заказать</button>
-							</div>
-							<div class="header__image">
-								<img src="img/banner_bg.png" alt="profi">
-							</div>
-						</div>
-					</div>
-				</div>
-		</header>
-		<div class="border"></div>
-	
-	<div class="sky"></div>
-	<section class="auto">
-		<div class="car">
-			<div class="wheels"><div class="disk"><span class="bolt"></span></div></div>
-			<div class="light-bottom"></div>
-			<div class="light-front"></div>
-			<div class="spoiler"></div>
-			<div class="door-left"><div class="handle"></div></div>
-			<div class="door-right"><div class="handle"></div></div>
-			<div class="bamper"></div>
-			<div class="roof"><div class="window"></div><div class="signal"></div></div>
+	<header class="header">
+		<div class="wrapper">
+			<div class="logo">
+				<a href="#"><span class="green">Uzbek</span>lar.<span class="blue">net</span></a>
+			</div>
+			<ul class="header__list">
+				<li><a href="#" class="header__link">Фильмы</a></li>
+				<li><a href="#" class="header__link">Клипы</a></li>
+				<li><a href="#" class="header__link">Музыка</a></li>
+			</ul>
+			<form method="GET" action="#" class="header__form">
+				<input autocomplete="off" type="text" class="header__input" name="search" value="Поиск...">
+				<input type="submit" class="header__submit" name="submit">
+			</form>
+			<div class="header__cabinet"><a href="#" class="cabinet__link"></a></div>
 		</div>
-		
-		<div class="road__box"><div class="road"><span></span><span class="sign"></span></div></div>
-	</section>
-	<div class="green"></div>
+	</header>
+	<main class="main">
+		<div class="wrapper">
+			<section class="registration">
+				<h4 class="about">Вход</h4>
+				<div class="form__box">
+					<h2 class="title">Регистрация</h2>
+					<form method="GET" action="#" class="registration__form form">
+						<input autocomplete="off" name="name" placeholder="Имя*" type="text" class="registration__input input">
+						<input autocomplete="off" name="surname" placeholder="Фамилия*" type="text" class="registration__input input">
+						<input autocomplete="off" name="login" placeholder="Логин*" type="text" class="registration__input input">
+						<input autocomplete="off" name="email" placeholder="Email*" type="text" class="registration__input input">
+						<input autocomplete="off" name="password" placeholder="Пароль*" type="password" class="registration__input input">
+						<input autocomplete="off" name="password" placeholder="Повторите пароль*" type="password" class="registration__input input">
+					</form>
+					<div class="form__item radio">
+						<input id="man" name="sex" value="man" class="radio__btn" type="radio">
+						<label class="radio__label" for="man">Мужчина</label>
+					</div>
+					<div class="form__item radio">
+						<input id="female" name="sex" value="female" class="radio__btn" type="radio">
+						<label class="radio__label" for="female">Женщина</label>
+					</div>
+					<div class="form__item rules">
+						<input id="rules" name="form[]" value="1" class="checkbox__btn" type="checkbox">
+						<label class="checkbox__label" for="rules">Я согласен с <a href="#">Условия и правила</a></label>
+					</div>
+					<div class="form__item">
+						<input class="submit" type="submit" value="Регистрация">
+					</div>
+					<p class="registration__text text">У вас есть аккаунт? <a href="#" class="login__link">Войти</a></p>
+				</div>
+			</section>
+			<section class="login">
+				<h4 class="about">Вход</h4>
+				<div class="form__box">
+					<h2 class="title">Вход</h2>
+					<form method="GET" action="#" class="login__form form">
+						<input autocomplete="off" name="email" placeholder="Email*" type="text" class="registration__input input">
+						<input autocomplete="off" name="password" placeholder="Пароль*" type="password" class="registration__input input">
+					</form>
+					<div class="login__item rules">
+						<input id="rules" name="form[]" value="1" class="login__btn" type="checkbox">
+						<label class="login__label" for="rules">Запомнить меня</label>
+						<a href="#" class="forgot">Забыли пароль?</a>
+					</div>
+					<div class="form__item">
+						<input class="submit" type="submit" value="Войти">
+					</div>
+					<div class="login__social">
+						<p>Войти через:</p>
+						<ul class="social">
+							<li><a href="#" class="social__link vk"></a></li>
+							<li><a href="#" class="social__link facebook"></a></li>
+							<li><a href="#" class="social__link ok"></a></li>
+						</ul>
+					</div>
+					<p class="registration__text text">У вас нет аккаунта? <a href="#" class="login__link">Регистрация</a></p>
+				</div>
+			</section>
+			<section class="restore">
+				<h4 class="about">Восстановление пароля</h4>
+				<h2 class="title">Восстановление пароля</h2>
+				<div class="form__box">
+					<p class="restore__text">Введите Email, на него будет выслан новый пароль</p>
+					<form method="GET" action="#" class="login__form form">
+						<input autocomplete="off" name="email" placeholder="Email*" type="text" class="registration__input input">
+					</form>
+					<div class="restore__item">
+						<a href="#" class="restore__link">Вернуться в форму авторизации</a>
+					</div>
+					<div class="form__item">
+						<input class="submit" type="submit" value="Отправить">
+					</div>
+					<p class="restore__spam">* Если вы не получили письмо с паролем, проверьте папку Спам.</p>
+					<p class="registration__text text">У вас нет аккаунта? <a href="#" class="login__link">Регистрация</a></p>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__text">Присоединиться:</div>
+			<ul class="social">
+				<li><a href="#" class="social__link twitter"></a></li>
+				<li><a href="#" class="social__link vk"></a></li>
+				<li><a href="#" class="social__link facebook"></a></li>
+				<li><a href="#" class="social__link insta"></a></li>
+				<li><a href="#" class="social__link youtube"></a></li>
+				<li><a href="#" class="social__link ok"></a></li>
+			</ul>
+			<div class="footer__bottom">
+				<ul class="footer__menu">
+					<li><a href="#" class="menu__link">О нас</a></li>
+					<li><a href="#" class="menu__link">Вопросы и ответы</a></li>
+				</ul>
+				<a href="lel:380679828122" class="phone">+38-067-982-81-22</a>
+				<a href="mailto:uzbeklarnet@gmail.com" class="mail">uzbeklarnet@gmail.com</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
