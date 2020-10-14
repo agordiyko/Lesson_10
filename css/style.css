@@ -346,8 +346,6 @@ textarea {
 .documents {
 	background-color: #fff;
 }
-.documents__container {
-}
 .documents__title {
 	margin: 46px 0 40px 0;
 }
@@ -448,8 +446,6 @@ textarea {
 .education {
 	padding: 60px 0;
 	background-color: #fff;
-}
-.education__container {
 }
 .education__title {
 	margin: 50px 0 29px;
@@ -616,10 +612,6 @@ textarea {
 	color: #fff;
 	padding: 50px 0 0;
 }
-.footer__container {
-}
-.container {
-}
 .footer__box {
 	display: flex;
 	justify-content: space-between;
@@ -660,34 +652,26 @@ textarea {
 	color: #E88952;
 	text-decoration: underline;
 }
-.contact-us__tel,
-.contact-us__mail{
-
-}
 .service__list li,
 .site-menu__list li{
 	margin: 0 0 16px 0;
 	padding: 5px 0 0 0;
 }
- {
-	width: 33%;
-	margin: 0 85px 0 0;
-}
 .contact-us {
 	width: 33%;
 }
-.social__item{
+.contact-us__item{
 	margin: 0 0 35px 0;
 }
-.social__item li{
+.contact-us__item li{
 	margin: 0 0 20px 0;
 }
-.social__btn {
+.contact-us__btn {
 	color: #fff;
 }
-.social__telegram,
-.social__viber,
-.social__whatsapp{
+.contact-us__telegram,
+.contact-us__viber,
+.contact-us__whatsapp{
 	font-weight: 500;
 	font-size: 17px;
 	line-height: 20px;
@@ -696,13 +680,13 @@ textarea {
 	transition: all 0.3s ease 0s;
 	position: relative;
 }
-.social__telegram:hover,
-.social__viber:hover,
-.social__whatsapp:hover{
+.contact-us__telegram:hover,
+.contact-us__viber:hover,
+.contact-us__whatsapp:hover{
 	color: #E88952;
 	text-decoration: underline;
 }
-.social__telegram::before{
+.contact-us__telegram::before{
 	position: absolute;
 	content: "";
 	width: 21px;
@@ -712,7 +696,7 @@ textarea {
 	background: url(../img/telegram.png) 0 2px / 90% no-repeat;
 	margin: 0 10px 0 0;
 }
-.social__viber::before{
+.contact-us__viber::before{
 	position: absolute;
 	content: "";
 	width: 21px;
@@ -722,7 +706,7 @@ textarea {
 	background: url(../img/viber-logo.png) 0 1px / 90% no-repeat;
 	margin: 0 10px 0 0;
 }
-.social__whatsapp::before{
+.contact-us__whatsapp::before{
 	position: absolute;
 	content: "";
 	width: 21px;
@@ -774,8 +758,6 @@ textarea {
 	left: 1px;
 	background: url(../img/email.png) 0 4px / 90% no-repeat;
 	margin: 0 10px 0 0;
-}
-.button {
 }
 .contact-us__button{
 	margin: 0 0 60px 0;
