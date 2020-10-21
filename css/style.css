@@ -810,15 +810,15 @@ textarea {
 }
 
 ._no-webp .education__info::before{
-  background: url(../img/yes.png) no-repeat; }
+  background: url(../img/yes.png) 1px 2px no-repeat; }
 
 .education__info::before {
   position: absolute;
   content: "";
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   border: 0.5px solid #53b43b;
-  top: 7px;
+  top: 4px;
   left: 44px;
   border-radius: 50%;
 }
@@ -1013,4 +1013,4 @@ textarea {
 
 ._webp .advantages ._fourth{ background: url(../img/a4.webp) 18px 34px no-repeat; }
 
-._webp .education__info::before{ background: url(../img/yes.webp) no-repeat; }
+._webp .education__info::before{ background: url(../img/yes.webp) 1px 2px no-repeat; }
