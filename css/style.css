@@ -204,32 +204,28 @@ textarea {
           box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
 }
 
-._no-webp .header__whatsapp:hover{
-  background: #27b831 url(../img/whatsapp-logo.png) center/45% no-repeat; }
-
 .header__whatsapp:hover {
   -webkit-box-shadow: 0px 6px 25px 10px rgba(45, 208, 56, 0.7);
           box-shadow: 0px 6px 25px 10px rgba(45, 208, 56, 0.7);
+  background: #27b831;
 }
 
 ._no-webp .header__viber{
-  background: #7b519d url(../img/viber-logo.png) center 12px/45% no-repeat; }
+  background: #7b519d url(../img/viber-logo.png) 12px 12px/45% no-repeat; }
 
 .header__viber {
   -webkit-box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
           box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
 }
 
-._no-webp .header__viber:hover{
-  background: #68408a url(../img/viber-logo.png) center 12px/45% no-repeat; }
-
 .header__viber:hover {
   -webkit-box-shadow: 0px 6px 25px 10px rgba(105, 64, 138, 0.504);
           box-shadow: 0px 6px 25px 10px rgba(105, 64, 138, 0.504);
+  background: #68408a;
 }
 
 ._no-webp .header__telegram{
-  background: #5bbaf0 url(../img/telegram.png) center 13px/45% no-repeat; }
+  background: #5bbaf0 url(../img/telegram.png) 11px 13px/45% no-repeat; }
 
 .header__telegram {
   -webkit-box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
@@ -818,7 +814,7 @@ textarea {
   width: 13px;
   height: 13px;
   border: 0.5px solid #53b43b;
-  top: 4px;
+  top: 3px;
   left: 44px;
   border-radius: 50%;
 }
@@ -925,6 +921,7 @@ textarea {
   font-weight: 500;
   font-size: 15px;
   color: #86afef;
+  text-decoration: underline;
 }
 
 .breadcrunbs__link_active {
@@ -983,13 +980,9 @@ textarea {
 
 ._webp .header__whatsapp{ background: #2dd038 url(../img/whatsapp-logo.webp) center/45% no-repeat; }
 
-._webp .header__whatsapp:hover{ background: #27b831 url(../img/whatsapp-logo.webp) center/45% no-repeat; }
+._webp .header__viber{ background: #7b519d url(../img/viber-logo.webp) 12px 12px/45% no-repeat; }
 
-._webp .header__viber{ background: #7b519d url(../img/viber-logo.webp) center 12px/45% no-repeat; }
-
-._webp .header__viber:hover{ background: #68408a url(../img/viber-logo.webp) center 12px/45% no-repeat; }
-
-._webp .header__telegram{ background: #5bbaf0 url(../img/telegram.webp) center 13px/45% no-repeat; }
+._webp .header__telegram{ background: #5bbaf0 url(../img/telegram.webp) 11px 13px/45% no-repeat; }
 
 ._webp .header__tel::before{ background: url(../img/tel.webp) 0 4px no-repeat; }
 
